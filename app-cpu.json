@@ -1,13 +1,13 @@
 {
-  "id": "cookbook-jupyter-template-cpu",
-  "version": "0.0.1",
-  "description": "Jupyter Lab environment for CPU",
+  "id": "jupyter-with-tapipy",
+  "version": "0.0.1:0ac83ea",
+  "description": "Jupyter Lab environment for CPU with tapipy",
   "owner": "${apiUserId}",
   "enabled": true,
   "runtime": "SINGULARITY",
   "runtimeVersion": null,
   "runtimeOptions": ["SINGULARITY_RUN"],
-  "containerImage": "docker://ghcr.io/in-for-disaster-analytics/cookbook-jupyter-template-cpu:0.0.1",
+  "containerImage": "docker://ghcr.io/mepearson/jupyter-cookbook-tapipy-cpu:sha-0ac83ea",
   "jobType": "BATCH",
   "maxJobs": -1,
   "maxJobsPerUser": -1,
@@ -141,11 +141,11 @@
   },
   "tags": ["portalName: ALL"],
   "notes": {
-    "label": "Cookbook - Jupyter Lab (CPU)",
+    "label": "Cookbook - Jupyter Lab (CPU) with tapipy",
     "hideNodeCountAndCoresPerNode": true,
     "isInteractive": true,
     "icon": "jupyter",
     "category": "Data Processing",
-    "queueFilter": ["development"]
+    "queueFilter": ["development","normal","vm-small"]
   }
 }
